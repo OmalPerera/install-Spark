@@ -93,6 +93,20 @@ printf "****************************** INSTALLING GIT FINISHED *****************
 
 
 
+# ++++++++++++++++++++++++++++++++++++++ SBT INSTALLATION ++++++++++++++++++++++++++++++++++++++ 
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+printf "****************************** INSTALLING SBT ****************************** \n"
+echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
+apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823
+apt-get update
+apt-get install sbt
+apt-get install bc
+printf "\n\n****************************** INSTALLING SBT FINISHED ********************* \n\n\n"
+
+
+
+
 # ++++++++++++++++++++++++++++++++++++++ SPARK INSTALLATION ++++++++++++++++++++++++++++++++++++++ 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -104,7 +118,7 @@ printf " ------------------------------ Downloading Spark-2.2.0 ----------------
 #wget http://d3kbcqa49mib13.cloudfront.net/spark-1.2.0-bin-hadoop2.4.tgz && tar -xzvf spark-1.2.0-bin-hadoop2.4.tgz
 
 # Spark-2.2.0
-wget http://www-eu.apache.org/dist/spark/spark-2.2.0/spark-2.2.0-bin-hadoop2.7.tgz && tar -xzvf spark-2.2.0-bin-hadoop2.7.tgzz
+wget http://www-eu.apache.org/dist/spark/spark-2.2.0/spark-2.2.0-bin-hadoop2.7.tgz && tar -xzvf spark-2.2.0-bin-hadoop2.7.tgz
 
 printf " ------------------------------ Extacting FInished ---------------------------- \n\n"
 
