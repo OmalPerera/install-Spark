@@ -1,8 +1,9 @@
-# Up & run your dev Real_time dev environment within 5 minutes #
+# Up & Run your Real-time Data Processing dev environment within 5 minutes #
 
 ## Apache Spark Installation Script ###
 
-Fully automated Spark installation bash script for **linux Dabian based Servers**. Complete installation with JAVA, Scala, GIT &amp; Spark.
+Fully automated Spark installation bash script for **linux Dabian based Servers**.
+
 Script will install following key components needes to install Real-time data processing with few clicks.
   
   - Full Update & Upgrade
@@ -13,7 +14,7 @@ Script will install following key components needes to install Real-time data pr
   - install git 
   - install sbt
   - install Apache spark spark-2.2.0 pre-built for Apache hadoop 2.7 & later
-  - + all the environmental + all the PATH variables 
+  - all the environmental + all the PATH variables 
 
 ## Step 1 - Granting the executing permission to the script 
 Navigate to the directory where the script is.
